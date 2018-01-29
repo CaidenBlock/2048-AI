@@ -17,7 +17,7 @@ function GameManager(size, InputManager, Actuator) {
   this.inputManager.on('run', function() {
     if (this.running) {
       this.running = false;
-      this.actuator.setRunButton('Use Hax');
+      this.actuator.setRunButton('Caiden's AI™');
     } else {
       this.running = true;
       this.run()
@@ -32,7 +32,7 @@ function GameManager(size, InputManager, Actuator) {
 GameManager.prototype.restart = function () {
   this.actuator.restart();
   this.running = false;
-  this.actuator.setRunButton('Use Hax');
+  this.actuator.setRunButton('Caiden's AI™');
   this.setup();
 };
 
